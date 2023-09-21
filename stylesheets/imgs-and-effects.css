@@ -1,0 +1,63 @@
+
+
+
+
+
+
+
+a[type=button], button {
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover{
+
+}
+
+.main-menu__nav > button {
+    display: flex;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button.button__custom{
+/* display: grid;
+grid-template-columns: (2, auto);
+grid-template-rows: "remix custom-text" ; */
+justify-content: center;
+}
+
+span.custom__remix{
+width: 5rem;
+max-width: fit-content;
+min-width: 20px;
+height: auto;
+position: relative;
+
+}
+button.button__custom > span.custom__remix > a > img {
+    background-position: 50%;
+    display: inline-flex;
+    width: 24px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #fff
+}
+
+
+div.actions__container > button > a > img{
+width: 25px;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: cover;
+height: auto;
+}

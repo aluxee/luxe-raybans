@@ -1,0 +1,60 @@
+
+
+.msg-bar__container{
+    display: grid;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.msg-transition {
+
+}
+.msg-title {
+
+}
+.header__nav {
+    display: flex;
+    background-color: #fff;
+    gap: 64px;
+
+}
+
+.rayban__icon {
+
+}
+
+.main-menu__nav {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    place-content: center;
+    justify-content: space-between;
+}
+
+.main-menu__nav button {
+    align-items: center;
+    width: fit-content;
+}
+
+.actions__container{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+
+/* enter the media queries here */
+
+@media (max-width: 1149px) {
+    .header__nav{
+        height: 56px;
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 1024px){
+    .header__nav {
+    height: 64px;
+    padding: 0px 64px;
+    }
+}
