@@ -1,0 +1,46 @@
+.swiper-container {
+  cursor: grab;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Apply styles to the swiper wrapper */
+msg.transition{
+  display: flex;
+  transition-duration: 0ms;
+}
+
+/* Apply styles to each swiper slide */
+#msg1 {
+  width: 600px;
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition-duration: 0ms;
+}
+
+/* Apply styles to the active slide */
+#msg2 {
+  opacity: 1;
+  transform: translate3d(-1200px, 0, 0); /* Adjust as needed */
+}
+
+/* Apply styles to the previous slide */
+#msg2 {
+  opacity: 1;
+  transform: translate3d(-600px, 0, 0); /* Adjust as needed */
+}
+
+/* Apply styles to the next slide */
+#msg5 {
+  opacity: 0;
+  transform: translate3d(-1800px, 0, 0); /* Adjust as needed */
+}
+
+/* Additional styles for the links and paragraphs inside slides */
+.swiper-slide a {
+  /* Add your link styles here */
+}
+
+.swiper-slide p {
+  /* Add your paragraph styles here */
+}

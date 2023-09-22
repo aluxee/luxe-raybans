@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 a[type=button], button {
     background-color: initial;
     border: none;
@@ -21,7 +15,6 @@ button:hover{
 
 .main-menu__nav > button {
     display: flex;
-    flex-shrink: 0;
 }
 
 a {
@@ -29,11 +22,12 @@ a {
     color: black;
 }
 
-button.button__custom{
+div.main-menu__nav > .button__custom{
 /* display: grid;
 grid-template-columns: (2, auto);
 grid-template-rows: "remix custom-text" ; */
 justify-content: center;
+width: 100px;
 }
 
 span.custom__remix{
