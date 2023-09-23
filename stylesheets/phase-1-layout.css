@@ -1,5 +1,7 @@
 body {
     margin: 0 auto;
+    max-height: fit-content;
+background-color: linear-gradient(red, white);;
 }
 
 header {
@@ -16,63 +18,60 @@ height: 48px;
 font-size: 12px;
 align-items: start;
 justify-content: center;
-justify-items: end;
+justify-items: center;
 background-color: #F2F2F2;
 text-align: center;
 text-rendering: geometricPrecision;
+position: fixed;
+z-index: 1;
+
 }
 .msg-bar__container > button {
     font-size: 12px;
     text-transform: uppercase;
+    margin-block-start: 4px;
+cursor: grab;
+
 
 }
-.msg-bar__skipper{
-    grid-area: skipper;
-    opacity: 0;
-    height: auto;
-    width: 600px;
-    font-size: 12px;
-    pointer-events: none;
-    box-sizing: inherit;
+
+button.msg-bar__skipper {
+    visibility: hidden;
 }
 
-.msg__bar{
-    grid-area: message;
-    display: flex;
-    align-items: stretch;
-    width: 600px;
-    font-family: 'Lato', sans-serif;
-    text-align: center;
-    justify-content: space-evenly;
-}
-
-.msg-title{
-    grid-area: title;
-    box-sizing: inherit;
-    font-size: 12px;
-    place-content: center;
-    font-family: 'Lato', sans-serif;
-}
-
-/* button.msg-title{
+button.msg-title {
+    position: relative;
+    margin-left: 50px;
+    margin-block-start: 15px;
 
 }
-p .msg-bar__container > button{
 
-} */
+button.msg-transition {
+    position: relative;
+    top: 15px;
+}
+
+/* --------------------------------------------------------------------------------*/
+
 .header__navigation {
     display: flex;
     background-color: #fff;
     gap: 105px;
     align-items: center;
     justify-content: center;
+    width:max-content;
+    position: fixed;
+    z-index: 3;
+    top: 48px;
 
 }
 
 .rayban__icon > a >img {
     display: inline-block;
     align-self: flex-start;
-width: 80px;
+    width: 80px;
+    background-color: transparent;
+    position: relative;
 }
 
 .main-menu__nav {
@@ -87,41 +86,51 @@ width: 80px;
     width: fit-content;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+    font-size: 14px;
 
 }
-
-.actions__container{
+/* --------------------------------------------------------------------------------*/
+div.actions__container{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 32px;
     padding: 5px;
     margin-left: 15px;
 }
+/* --------------------------------------------------------------------------------*/
 
 div.promo__nav {
-display: grid;
-height: 48px;
-text-align: center;
-place-content: center;
-background-color: #1F1F24;
-font-family: 'Oswald', sans-serif;
-color: #fff;
+    display: grid;
+    height: 48px;
+    text-align: center;
+    place-content: center;
+    background-color: #1F1F24;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    position: fixed;
+    z-index: 3;
+    top: 100px;
+    width: 100%;
+
 
 }
+
 
 .msg-transition > div > a > p{
     text-transform: none;
 }
 
+
+/* ---------------------------------------*/
+
 #msg1 {
-    position: absolute;
 
-
-
-    visibility: hidden;
+    visibility: visible;
     transition-duration: 0ms;
-    opacity: 1;
-    width: 600px;
+
 
 }
 
@@ -132,8 +141,8 @@ color: #fff;
 
     visibility: hidden;
     transition-duration: 0ms;
-    opacity: 1;
-    width: 600px;
+    opacity: 0;
+
 
 
 }
@@ -143,9 +152,9 @@ color: #fff;
 
 
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     transition-duration: 0ms;
-    width: 600px;
+
 
 
 }
@@ -154,27 +163,41 @@ color: #fff;
     position: absolute;
 
 
-    /* visibility: hidden; */
+     visibility: hidden;
     opacity: 0;
     transition-duration: 0ms;
-    width: 600px;
+
 
 }
 
 #msg5 {
     position: absolute;
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     /* transition-duration: 0ms; */
-    width: 600px;
 
+ }
 
+/* --------------------------------------------------------------------------------*/
+.peeps {
+    display: grid;
+    position: relative;
+    bottom: 760px;
+    width: 100%;
 }
+
+
+/* --------------------------------------------------------------------------------*/
+
 
 /* enter the media queries here */
 
 @media (max-width: 1149px) {
     .header__navigation{
+        height: 56px;
+        padding: 0 16px;
+    }
+    .content {
         height: 56px;
         padding: 0 16px;
     }
@@ -184,5 +207,9 @@ color: #fff;
     .header__navigation {
     height: 64px;
     padding: 0px 64px;
+    }
+    .content {
+    /* height: 64px; */
+    /* padding: 0px 64px; */
     }
 }

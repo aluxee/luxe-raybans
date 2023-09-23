@@ -9,18 +9,22 @@ a[type=button], button {
     padding: 0;
 }
 
-button:hover{
+.main-menu__nav > button:hover{
+text-decoration: underline;
 
+
+}
+/* --------------------------------------------------------------------------------*/
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .main-menu__nav > button {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 div.main-menu__nav > .button__custom{
 /* display: grid;
@@ -47,6 +51,12 @@ button.button__custom > span.custom__remix > a > img {
     color: #fff
 }
 
+.drop-down > div {
+/* how to make it so that it doesnt take up room and ends up under the category...*/
+display: flex;
+}
+/* --------------------------------------------------------------------------------*/
+
 
 div.actions__container > button > a > img{
 width: 25px;
@@ -54,4 +64,35 @@ background-position: 50% 50%;
 background-repeat: no-repeat;
 background-size: cover;
 height: auto;
+
 }
+
+div.actions__container > button > a > img:first-child {
+    position: relative;
+    right: 20px;
+    top: 4px;
+    cursor:grab;
+
+}
+
+.action > a > i {
+font-size: 1.4rem;
+}
+/* --------------------------------------------------------------------------------*/
+video {
+    position: relative;
+    bottom: 260px;
+    /* width:100%; */
+    z-index: 2;
+}
+/* --------------------------------------------------------------------------------*/
+.banner-2 > img {
+    position: relative;
+    bottom: 670px;
+   width: 100%;
+   z-index: 3;
+
+}
+
+
+.
