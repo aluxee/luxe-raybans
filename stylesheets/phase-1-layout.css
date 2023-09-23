@@ -1,7 +1,8 @@
-body {
+body,html {
     margin: 0 auto;
     max-height: fit-content;
-background-color: linear-gradient(red, white);;
+background: linear-gradient(red, white,  blue);
+
 }
 
 header {
@@ -88,6 +89,10 @@ button.msg-transition {
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
 
+}
+
+.main-menu__nav #red-button__main-menu {
+color: red;
 }
 /* --------------------------------------------------------------------------------*/
 div.actions__container{

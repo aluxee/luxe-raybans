@@ -11,6 +11,7 @@ a[type=button], button {
 
 .main-menu__nav > button:hover{
 text-decoration: underline;
+font-size: large;
 
 
 }
@@ -93,6 +94,3 @@ video {
    z-index: 3;
 
 }
-
-
-.
